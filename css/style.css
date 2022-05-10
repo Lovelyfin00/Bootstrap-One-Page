@@ -4,7 +4,12 @@
     box-sizing: border-box;
 }
 
-
+.top-hero-section{
+    background-color:rgba(255, 255, 255, 0.8)
+}
+#brands-section{
+    background-color: #f8fbfe;
+}
 #happy-clients{
-    background-color: #f8fbfe;;
+    background-color: #f8fbfe;
 }
