@@ -4,12 +4,279 @@
     box-sizing: border-box;
 }
 
+
+/* hero section */
+
 .top-hero-section{
-    background-color:rgba(255, 255, 255, 0.8)
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8) ), url(../img/hero-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+.main-color{
+    color:#124265;
+}
+
+.hero-content p{
+    font-size: 24px;
+    color: #5e5e5e;
+}
+.get-started{
+    background-color: #0d6efd;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.get-started:hover{
+    background-color:#2487ce;
+    color: white;
+}
+
+/* Card section */
+
+.icon1{
+    margin-bottom: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+    font-size: 36px;
+    line-height: 1;
+    color: #2487ce;
+}
+#cards-section .card{
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(18 66 101 / 8%) 0px 0px 29px 0px !important;
+    border-radius: 8px;
+    border: none;
+}
+#cards-section .card:hover{
+    transition: all 0.3s ease-in-out 0s;
+    transform: scale(1.1);
+    
+}
+#cards-section .card .card-body h6{
+    font-size: 19px;
+    font-weight: bold;
+}
+#cards-section .card:hover .card-body h6{
+    transition: text all 0.3s ease-in-out ;
+    /* color: #2487ce; */
+    color: #0d6efd;
+}
+
+
+/* About section */
+
+.bi-check2-all{
+    font-size: 20px;
+    color: #2487ce;
+    padding-right: 10px;
+}
+
+.btn-outline-primary{
+    border: 2px solid #2487ce !important;
+    padding-right: 35px !important;
+    padding-left: 35px !important;
+    font-size: 18px !important;
+    color: #2487ce;
+}
+
+.btn-outline-primary:hover{
+    background-color: #2487ce;
+}
+
+
+
+/* Happy clients */
+.purecounter{
+    font-size: 48px;
+    font-weight: 700;
+    color: #124265;
+}
+.text-primary{
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    color: #1e6ca6 !important;
+}
+
+
+/* Video section */
+
+.video-heading{
+    font-size: 28px;
+    color: #124265;
+}
+
+.bi-check-all{
+    font-size: 20px;
+    color: #2487ce;
+    padding-right: 10px;
+}
+
+
+/* Brands section */
 #brands-section{
     background-color: #f8fbfe;
 }
 #happy-clients{
     background-color: #f8fbfe;
+}
+
+.client-img img{
+    max-width: 45%;
+    filter: grayscale(100);
+    transition: all 0.4s ease-in-out;
+}
+.client-img img:hover{
+    filter: grayscale(0);
+    transform: scale(1.15);
+}
+
+
+/* Testimonial section */
+
+
+.testimonial-content .textimonial-text:after{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    
+    border-top: 20px solid #f3f9fd;
+}
+
+.fa-quote-left{
+    color: #c9e3f5;
+}
+
+.fa-quote-right{
+    color: #c9e3f5;
+}
+
+.testimonial-content .textimonial-text p{
+    background-color: #f3f9fd;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+
+.customer1{
+    width: 40%;
+    margin: auto;
+}
+.customer1 img{
+    width: 80%;
+    border-radius: 50%;
+}
+
+
+.testimonial-img h3{
+    font-size: 24px;
+}
+
+
+/* Services section */
+
+#services-section{
+    background-color: #f8fbfe;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.service-text p{
+    color: #919191;
+}
+
+#services-section .service-cards .card{
+    border: none;
+    padding-top: 50px ;
+    padding-bottom: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(18 66 101 / 8%) 0px 0px 29px 0px !important;
+    border-radius: 3px;
+}
+
+.icon-part{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:all ease-in-out 0.3s;
+    margin: auto;
+}
+
+.icon-part svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.icon-part svg path{
+    transition: 0.5s;
+}
+.icon-part i{
+    position: relative;
+    z-index: 10;
+    font-size: 26px;
+}
+.icon-part .bi-dribbble{
+    color: #47aeff;
+}
+
+.card-body:hover .icon-part .icon1-svg path{
+    fill: #47aeff;
+}
+
+.card-body:hover .icon-part i{
+    color: white;
+}
+
+.icon-part .bi-file-earmark-text-fill{
+    color: #ffa76e;
+}
+
+.card-body:hover .icon-part .icon2-svg path{
+    fill: #ffa76e;
+}
+
+.icon-part .bi-speedometer2{
+    color: #e80368;
+}
+
+.card-body:hover .icon-part .icon3-svg path{
+    fill: #e80368;
+}
+
+.icon-part .bi-stack{
+    color: #ffbb2c;
+}
+.card-body:hover .icon-part .icon4-svg path{
+    fill:#ffbb2c
+}
+
+.icon-part .bi-easel2{
+    color: #ff5828;
+}
+.card-body:hover .icon-part .icon5-svg path{
+    fill:#ff5828;
+}
+
+.icon-part .fa-archway{
+    color: #11dbcf;
+}
+.card-body:hover .icon-part .icon6-svg path{
+    fill: #11dbcf;
+}
+
+#services-section .service-cards .card .card-body h6{
+    font-size: 24px;
+}
+#services-section .service-cards .card .card-body p{
+    font-size: 16px;
 }
